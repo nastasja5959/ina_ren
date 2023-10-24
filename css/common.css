@@ -193,23 +193,26 @@ header{
 .article-date{
   font-size: 12px;
   color: rgba( 0, 0, 0, 0.5);
+  margin-bottom: 80px;
 }
 
 /* メインここまで */
 
-/* フッターここから */
 .footer{
   position: absolute;
   left: 0;
   right: 0;
 }
 .linkbelow-link {
+  margin-top: -80px;
+  left: 0;
+  right: 0;
   display: flex;
   justify-content: center;
   width: 100%;
   font-size: 14px;
   letter-spacing: 2px;
-  padding: 30px 0 60px;
+  padding: 30px 0;
   background: #eee;
 }
 .linkbelow-link, .linkbelow-link * {
@@ -218,14 +221,14 @@ header{
 .store-section, .onlinestore-section {
   margin: 0 18%;
 }
+.linkbelow-linkres{
+  display: none;
+}
+/* フッター */
 .footer-under {
   background: #000;
   padding-top: 80px;
 }
-.linkbelow-linkres{
-  display: none;
-}
-/* フッターここまで */
 /* ジャバスクリプト */
 /*TOPスライダー部分*/
 .top-slider-wrap{
@@ -420,17 +423,18 @@ width: 85%;
 }
 
 .article-date{
-  margin-bottom: 14px;
+  margin-bottom: 80px;
   padding-left: 20px;
 }
 .article:nth-child(n+4) {
   display: none;
 }
-/* フッターここから */
 .linkbelow-link {
   flex-direction: column;
   align-items: center;
   padding-bottom: 0;
+  margin-top: -60px;
+  padding: 30px 0 61px;
 }
 .store-section, .onlinestore-section {
   margin: 30px 0;  /* 上下の間隔を適切に調整するためのマージン */
@@ -451,7 +455,15 @@ width: 85%;
   text-align: center;
   padding: 20px 0 20px;
   background-color: #fff;
-  border-bottom: solid 1px rgba(16, 20, 19, 0.1);
+  border-bottom: solid 2px rgba(16, 20, 19, 0.1);
 }
+.linkbelow{
+  margin-bottom: -60px;
+}
+/* フッター */
 
+.footer-under {
+  background: #000;
+  top: -40px;
+}
 }
