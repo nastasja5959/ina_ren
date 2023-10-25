@@ -49,17 +49,18 @@ header{
   position: absolute;
   width: 100%;
 }
-.header-linklink{
+.header-linkword{
   display: flex;
   margin-top: 59px;
   margin-left: 34%;
 }
-.header-linklink li{
+.header-linkword li{
   margin-right: 30px;
   letter-spacing: 2px;
   white-space: nowrap;
+  padding-top: 20px;
 }
-.header-linklink li:last-child{
+.header-linkword li:last-child{
   margin-right: 0;
 }
 .header-logoother{
@@ -252,10 +253,10 @@ width: 85%;
   .header-inner{
     padding-bottom: 8px;
   }
-  .header-linklink li{
+  .header-linkword li{
     transform: translateX(-260px) translateY(70px);
   }
-  .header-linklink li:last-child{
+  .header-linkword li:last-child{
     transform: translateX(-420px);
 }
 }
@@ -336,7 +337,7 @@ width: 85%;
 .header-link {
   position: fixed;
   width: 100%;
-  top: 0;
+  top: 2px;
   left: 100%; /*0でハンバーガー呼びだす100%で元の位置*/
   background: rgba(255,255,255,0.95);
   height: 300vh;
@@ -346,34 +347,34 @@ width: 85%;
   align-items: center; /* これを追加 */
   justify-content: center; /* 必要に応じて追加 */
 }
-.header-linklink{
+.header-linkword{
   position: absolute;
   display: block;
   text-align: center;
   font-size: 15px;
-  display: block;
   top: 0; 
   left: 0;
   margin-top: 6px;
   padding-left: 320px;
+  margin-left: 0px;
 }
-.header-linklink li{
-  padding: 20px 0;
+.header-linkword li{
+  padding: 20px 240px;
   border-bottom: solid 1px rgba(16, 20, 19, 0.1);
   width: 100%; 
   box-sizing: border-box;
 }
-.header-linklink li:first-child{
+.header-linkword li:first-child{
   border-top: solid 1px rgba(16, 20, 19, 0.1);
 }
-.header-linklink li:last-child{
+.header-linkword li:last-child{
   border-top: solid 1px rgba(16, 20, 19, 0.1);
   top: 426px;
   z-index: 1000;
 }
-.header-linklink li.header-logoother.responsive {
+.header-linkword li.header-logoother.responsive {
   left: 34%;
-  transform: translateX(-155%) translateY(155%);
+  transform: translateX(-40%) translateY(155%);
 }
 .header-link.is-active {
   left: 0%
@@ -429,7 +430,10 @@ width: 85%;
 .article:nth-child(n+4) {
   display: none;
 }
+.linkbelow{
+  }
 .linkbelow-link {
+  position: relative;
   flex-direction: column;
   align-items: center;
   padding-bottom: 0;
